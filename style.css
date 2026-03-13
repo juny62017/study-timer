@@ -1,17 +1,37 @@
 body{
-font-family: Arial, sans-serif;
-text-align:center;
-margin-top:80px;
+    font-family: Arial, sans-serif;
+    background: #077d80;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+#app{
+    background:rgb(13, 146, 172);
+    padding:40px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 #timer{
-font-size:48px;
-margin:30px;
+    font-size:50px;
+    margin:25px 0;
 }
 
 button{
-padding:10px 18px;
-font-size:16px;
-margin:6px;
-cursor:pointer;
+    padding:10px 20px;
+    margin:15px;
+    font-size:16px;
+    border:none;
+    border-radius:6px;
+    background: #48068e8a;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#9b0765;
 }
