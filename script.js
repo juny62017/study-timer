@@ -4,6 +4,7 @@ let timerElement = document.getElementById("timer")
 let startBtn = document.getElementById("start")
 let pauseBtn = document.getElementById("pause")
 let resetBtn = document.getElementById("reset")
+let progressBar = document.getElementById("progressBar")
 
 let timerInterval = null
 
@@ -28,6 +29,9 @@ seconds = "0" + seconds
 let timeText = hours + ":" + minutes + ":" + seconds
 
 timerElement.innerText = timeText
+
+let progress = (28800 - totalSeconds) / 28800 * 100
+progressBar.style.width = progress + "%"
 }
 
 function startTimer(){
